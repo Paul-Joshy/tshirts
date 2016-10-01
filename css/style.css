@@ -1,0 +1,40 @@
+body{
+text-align: center;	
+}
+
+body #side-panel{
+	display: block;
+	float: left;
+	width:20%;
+	height: 100%;
+	background-color: aqua;
+}
+
+body #main-content .item-block{
+	position:relative;
+	display: inline-block;
+	width:150px;
+	height:200px;
+	margin: 5px;
+	background-color: black
+}
+
+body #main-content .item-block img
+{
+	position: absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	width:150px;
+	height:200px;
+}
+
+body #main-content .item-block h4{
+	position: absolute;
+	display: block;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: green;
+	margin:0px;
+}

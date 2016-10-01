@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<!-- VENDOR JS FILES -->
+		<script src="vendor/angular.min.js"></script>
+		<script src="vendor/jquery.min.js"></script>
+		<script src="vendor/bootstrap.min.js"></script>
+		
+		<!-- CUSTOM JS FILES -->
+		<script src="js/tShirtApp.js"></script>
+		<script src="js/tShirtCtrl.js"></script>
+		
+		<!-- VENDOR CSS FILES -->
+		<link href="css/bootstrap.css" rel=stylesheet>
+		
+		<!-- CUSTOM CSS FILES -->
+		<link href="css/style.css" rel=stylesheet>
+	</head>
+	<body ng-app="tShirtApp" >
+		<h1>T-Shirts</h1>
+		<div id="side-panel">
+		</div>
+		<div id="main-content" ng-controller="tShirtCtrl">
+			<div class="item-block" ng-repeat="tshirt in tShirts">
+				<img src="{{tshirt.location}}" data-toggle="modal" data-target="#testmodal">
+				<h4>{{ tshirt.name }}</h4>
+			</div>
+		</div>
+		
+			<!--modal-->
+			<div id="testmodal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Modal Header</h4>
+						</div>
+						<div class="modal-body">
+							<p>Some text in the modal.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>

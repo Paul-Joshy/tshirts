@@ -37,5 +37,6 @@ tShirtApp.controller('tShirtCtrl',['$scope',function($scope){
 		{location:"/images/2.jpg",description:"lorem ipsum",price:""},
 		{location:"/images/3.jpg",description:"lorem ipsum",price:""}
 	];
+	$scope.searchInput = "";
 
 }])

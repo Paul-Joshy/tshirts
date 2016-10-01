@@ -10,21 +10,20 @@ body #header{
 
 body #nav{
 	display: block;
-	width:1000%;
+	width:100%;
 	height: 30px;
 	background-color:green;
-	color: antiquewhite;
+	color: darkslategrey;
 	z-index:1;
+}
+
+body #nav input{
+	float:right;
 }
 
 body #nav.fixed{
 	position: fixed;
 	top:0px;
-}
-
-body #nav p{
-	margin: 0px;
-	display: inline;
 }
 
 body #main-content .item-block{

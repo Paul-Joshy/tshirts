@@ -8,13 +8,23 @@ body #header{
 	color: lightgrey;
 }
 
-body #side-panel{
+body #nav{
 	display: block;
-	float: left;
-	width:20%;
-	height: 100%;
-	background-color:black;
+	width:1000%;
+	height: 30px;
+	background-color:green;
+	color: antiquewhite;
+	z-index:1;
+}
+
+body #nav.fixed{
 	position: fixed;
+	top:0px;
+}
+
+body #nav p{
+	margin: 0px;
+	display: inline;
 }
 
 body #main-content .item-block{
@@ -42,6 +52,6 @@ body #main-content .item-block h4{
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-	background-color: green;
+	background-color: darkseagreen;
 	margin:0px;
 }

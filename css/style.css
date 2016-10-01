@@ -1,5 +1,11 @@
 body{
-text-align: center;	
+	text-align: center;
+	background-color: black;
+}
+
+body #header{
+	background-color: dimgrey;
+	color: lightgrey;
 }
 
 body #side-panel{
@@ -7,7 +13,8 @@ body #side-panel{
 	float: left;
 	width:20%;
 	height: 100%;
-	background-color: aqua;
+	background-color:black;
+	position: fixed;
 }
 
 body #main-content .item-block{
@@ -16,7 +23,7 @@ body #main-content .item-block{
 	width:150px;
 	height:200px;
 	margin: 5px;
-	background-color: black
+	background-color: black;
 }
 
 body #main-content .item-block img

@@ -17,16 +17,29 @@
 		<link href="css/style.css" rel=stylesheet>
 	</head>
 	<body ng-app="tShirtApp" >
-		<h1>T-Shirts</h1>
+		<div id="header">
+			<h1>T-Shirts</h1>
+		</div>
 		<div id="nav">
 			<input type="text" placeholder="search tshirts by name">
 		</div>
-		<div id="main-content" ng-controller="tShirtCtrl">
-			<div class="item-block" ng-repeat="tshirt in tShirts">
-				<img src="{{tshirt.location}}" data-toggle="modal" data-target="#testmodal">
-				<h4>T-shirt{{$index+1}}</h4>
+		<div id="container">
+			<div id="left-spacing">
+				<div id="left-arrow">
+				</div>
 			</div>
-		</div>
+
+			<div id="main-content" ng-controller="tShirtCtrl">
+				<div class="item-block" ng-repeat="tshirt in tShirts track by $index">
+					<img src="{{tshirt.location}}" data-toggle="modal" data-target="#testmodal">
+					<h4>T-shirt {{$index+1}}</h4>
+				</div>
+			</div>
+
+			<div id="right-spacing">
+				<div id="right-arrow">
+				</div>
+			</div>
 		
 			<!--modal-->
 			<div id="testmodal" class="modal fade" role="dialog">

@@ -1,42 +1,17 @@
-tShirtApp.controller('tShirtCtrl',['$scope',function($scope){
-	$scope.tShirts =  [
-		{location:"/images/1.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/2.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/3.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/1.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/2.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/3.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/1.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/2.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/3.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/1.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/2.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/3.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/1.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/2.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/3.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/1.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/2.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/3.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/1.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/2.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/3.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/1.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/2.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/3.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/1.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/2.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/3.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/1.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/2.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/3.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/1.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/2.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/3.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/1.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/2.jpg",description:"lorem ipsum",price:""},
-		{location:"/images/3.jpg",description:"lorem ipsum",price:""}
-	];
-	$scope.searchInput = "";
-
-}])
+tShirtApp.controller('tShirtCtrl',['$scope','$location',function($scope,$location){
+	var i = 0;
+	increment(i);
+	decrement(i);
+	$scope.tShirts = select10(i);
+	/*$scope.incrementResult = function(){
+		console.log("Incremented");
+		i++;
+	};
+	
+	$scope.decrementResult = function(){
+		console.log("decremented");
+		if(i !== 0)
+			i--;
+	};*/
+	
+}]);

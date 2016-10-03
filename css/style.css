@@ -1,11 +1,19 @@
 body{
 	text-align: center;
 	background-color: black;
+	height: 100%;
 }
 
 body #header{
+	display: block;
 	background-color: dimgrey;
 	color: lightgrey;
+	height: 50px;
+}
+
+body #header h1{
+	margin: 0;
+	line-height: 1.5;
 }
 
 body #nav{
@@ -19,6 +27,8 @@ body #nav{
 
 body #nav input{
 	float:right;
+	padding: 0px;
+	border: 0px;
 }
 
 body #nav.fixed{
@@ -26,12 +36,58 @@ body #nav.fixed{
 	top:0px;
 }
 
+body #container{
+}
+
+body #container #left-spacing{
+	height:85%;
+	width:5%;
+	float: left;
+}
+
+body #container #right-spacing{
+	height:85%;
+	width:5%;
+	float: right;
+}
+
+body #left-arrow{
+	display: inline-block;
+	position: fixed;
+	top: 50%;
+	height: 0px;
+	width: 0px;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-right: 20px solid red;
+	border-left: 20px transparent;
+}
+
+body #right-arrow{
+	display: inline-block;
+	position: fixed;
+	top: 50%;
+	height: 0px;
+	width: 0px;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-left: 20px solid red;
+	border-right: 20px solid transparent;
+}
+
+body #main-content{
+	width: 90%;
+	height: 85%;
+	margin: 0 auto;
+	display: inline-block;
+}
+
 body #main-content .item-block{
 	position:relative;
 	display: inline-block;
-	width:150px;
-	height:200px;
-	margin: 5px;
+	width:217px;
+	height:233px;
+	margin: 20px 10px;
 	background-color: black;
 }
 
@@ -41,8 +97,8 @@ body #main-content .item-block img
 	top:0px;
 	left:0px;
 	right:0px;
-	width:150px;
-	height:200px;
+	width:217px;
+	height:233px;
 }
 
 body #main-content .item-block h4{
